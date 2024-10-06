@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Search Blood | Drug Inventory & Supply | Government of India</title>
+    <title>Search Pharmacy | Drug Inventory & Supply | Government of India</title>
 
     <!--  FAVICON  -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!--  SCRIPT  -->
+    <script src="cities.js"></script>
 
 </head>
 <body>
@@ -22,11 +25,11 @@
     </header>
 
     <nav class="top_nav">
-        <a href="search-medicine.html">Search Medicine</a>
-        <a href="search-blood.html">Search Blood</a>
-        <a href="search-phamacy.html">Search Pharmacy</a>
-        <a href="search-hospital.html">Search Hospital</a>
-        <a href="about-us.html">About Us | GoI</a>
+        <a href="../searchMedicine/search-medicine.html">Search Medicine</a>
+        <a href="../searchBlood/search-blood.html">Search Blood</a>
+        <a href="../searchPharmacy/search-phamacy.html">Search Pharmacy</a>
+        <a href="../searchHospital/search-hospital.html">Search Hospital</a>
+        <a href="../about-us.html">About Us | GoI</a>
     </nav>
 
     <div class="wrapper">
@@ -39,21 +42,15 @@
 
         <section class="info medicine">
 
-            <h2><u>Search for Blood</u></h2>
+            <h2><u>Search for Nearest Pharmacy</u></h2>
 
             <form action="" method="get">
-                <label for="name">Blood Group:</label>
+                <label for="name">Search by Place:</label>
                 <br>
-                <select name="blood_group" id="blood_group">
-                    <option value="A+">A+</option>
-                    <option value="A-">A-</option>
-                    <option value="B+">B+</option>
-                    <option value="B-">B-</option>
-                    <option value="O+">O+</option>
-                    <option value="O-">O-</option>
-                    <option value="AB+">AB+</option>
-                    <option value="AB-">AB-</option>
-                </select>
+                <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
+                <br>
+                <select id ="state" class="form-control" required></select>
+                <script language="javascript">print_state("sts");</script>
                 <br>
                 <button type="submit">submit</button>
             </form>
@@ -64,11 +61,11 @@
 
             <ul>
                 <p><b><u>Quick Links</u></b></p>
-                <li><a href="search-medicine.html">Search Medicine</a></li>
-                <li><a href="search-blood.html">Search Blood</a></li>
-                <li><a href="search-phamacy.html">Search Pharmacy</a></li>
-                <li><a href="search-hospital.html">Search Hospital</a></li>
-                <li><a href="about-us.html">About Us | GoI</a></li>
+                <li><a href="../searchMedicine/search-medicine.html">Search Medicine</a></li>
+                <li><a href="../searchBlood/search-blood.html">Search Blood</a></li>
+                <li><a href="../searchPharmacy/search-phamacy.html">Search Pharmacy</a></li>
+                <li><a href="../searchHospital/search-hospital.html">Search Hospital</a></li>
+                <li><a href="../about-us.html">About Us | GoI</a></li>
             </ul>
     
             <ul>

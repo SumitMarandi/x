@@ -1,0 +1,99 @@
+/*-- HEADER CSS --*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+}
+
+header {
+    text-align: center;
+    border-bottom: solid 2px;
+    background-color: #fff;
+    padding: 15px 0;
+}
+
+header h1{
+    margin: 0;
+}
+
+.top_nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top_nav a {
+    border: solid;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: green;
+    color: white;
+}
+
+
+
+
+/*-- MAIN CSS --*/
+.wrapper {
+    margin:10px 30px;
+}
+
+.gov {
+    text-align: center;
+}
+
+.gov img {
+    width: 20%;
+}
+
+.medicine {
+    text-align: center;
+}
+
+form input, form select{
+    border: solid 1px #000;
+    height: 20px;
+    width: 70%;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+form button {
+    border: solid 1px #000;
+    background-color: grey;
+    color: white;
+    margin-top: 5px;
+    width: 70.3%;
+    height: 20px;
+}
+
+form button:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+/*-- FOOTER CSS --*/
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    border-top: solid 2px;
+    background-color: #fff;
+}
+
+.bot_nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bot_nav ul li {
+    margin: 10px 0;
+}
+
+.bot {
+    text-align: center;
+    margin-bottom: 30px;
+}
